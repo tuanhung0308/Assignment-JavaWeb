@@ -26,15 +26,15 @@
             <article class="card-body">
                 <a href="register.jsp" class="float-right btn btn-outline-primary">Register</a>
                 <a href="loginAdmin.jsp" class="float-right btn btn-outline-primary">Login with role Admin</a>
-                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                <h4 class="card-title mb-4 mt-1">User account</h4>
                 <form action="MainController">
                     <div class="form-group">
-                        <label>username</label>
+                        <label>Username</label>
                         <input class="form-control" placeholder="username" type="text" name="username">
                     </div> 
                     <div class="form-group">
                         <a class="float-right" href="#">Forgot?</a>
-                        <label>Your password</label>
+                        <label>Password</label>
                         <input class="form-control" placeholder="******" type="password" name="password">
                     </div> 
                     <div class="form-group"> 

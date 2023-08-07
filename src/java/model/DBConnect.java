@@ -15,8 +15,8 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author DELL DBConect: Quản lý kết nối đến CSDL và các method dùng chung cho
- * các DAO
+ * @author DELL 
+ * 
  */
 public class DBConnect {
 
@@ -34,19 +34,8 @@ public class DBConnect {
 
     public DBConnect() {
         this("jdbc:sqlserver://localhost:1433;databaseName=SE1704",
-                "sa", "123456");
-//        try {
-//            //goi driver
-//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-//            //conect
-//            conn=DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=SE1704",
-//                    "sa","123456");
-//            System.out.println("Connected");
-//        } catch (ClassNotFoundException ex) {
-//            ex.printStackTrace();
-//        } catch (SQLException ex) {
-//            ex.printStackTrace();
-//        }
+                "sa", "123");
+
     }
 
     public ResultSet getData(String sql) {
@@ -69,7 +58,7 @@ public class DBConnect {
         Connection conn = null;
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url = "jdbc:sqlserver://localhost:1433;databaseName=SE1704";
-        conn = DriverManager.getConnection(url, "sa", "123456");
+        conn = DriverManager.getConnection(url, "sa", "123");
         return conn;
     }
 
